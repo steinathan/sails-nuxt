@@ -7,7 +7,7 @@
     "sails-generate": "1.15.25"
   },
   "hooks": {
-    "grunt": false,
+    "grunt": false
   },
    "hookTimeout": 1200000
 }

@@ -7,15 +7,7 @@
 </template>
 
 <script>
-  import {
-    ContentLoader,
-    CodeLoader
-  } from 'vue-content-loader'
   export default {
-    components: {
-      CodeLoader,
-      ContentLoader
-    },
     data() {
       return {}
     },
