@@ -1,0 +1,13 @@
+{
+  "generators": {
+    "modules": {}
+  },
+  "_generatedWith": {
+    "sails": "1.1.0",
+    "sails-generate": "1.15.25"
+  },
+  "hooks": {
+    "grunt": false,
+  },
+   "hookTimeout": 1200000
+}
