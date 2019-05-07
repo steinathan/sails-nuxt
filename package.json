@@ -30,14 +30,15 @@
     "vuetify": "^1.5.14"
   },
   "devDependencies": {
+    "@mdi/font": "^3.6.95",
     "@sailshq/eslint": "^4.19.3",
     "babel-eslint": "^10.0.1",
     "css-loader": "^2.1.1"
   },
   "scripts": {
     "dev": "sails lift",
-    "build": "cross-env NODE_ENV=development sails run build-nuxt",
-    "start": "cross-env NODE_ENV=production sails lift",
+    "start": "cross-env NODE_ENV=production node app --port=3000",
+    "build": "nuxt build client --spa",
     "lint": "eslint . --max-warnings=0 --ext .js,.vue --report-unused-disable-directives && echo '✔  Your .js files look good.'"
   },
   "license": "(MIT OR Apache-2.0)",

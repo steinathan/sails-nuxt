@@ -106,7 +106,7 @@ export default {
   },
   head() {
     return {
-      title: { inner: `Login ` }
+      title: "Login"
     };
   }
 };

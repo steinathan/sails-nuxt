@@ -11,9 +11,11 @@ module.exports = {
     },
   },
   fn: async function(inputs, exits) {
-    sails.log.info("Building nuxt for production ..");
+    sails.log("Build nuxt for production...");
+
     let nuxt = sails.nuxt;
     let options = sails.nuxt.options;
+
     if (inputs.analyze && typeof options.build.analyze !== "object") {
       options.build.analyze = true;
     }
