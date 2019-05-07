@@ -1,51 +1,47 @@
 module.exports.nuxt = {
-  mode: 'universal',
+  mode: "universal",
   /*
    ** Headers of the page
    */
   head: {
-    title: 'Sails Nuxt',
-    meta: [{
-        charset: 'utf-8'
+    title: "Sails Nuxt",
+    meta: [
+      {
+        charset: "utf-8",
       },
       {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        name: "viewport",
+        content: "width=device-width, initial-scale=1",
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: 'Nuxt.js project'
-      }
+        hid: "description",
+        name: "description",
+        content: "Nuxt.js project",
+      },
     ],
-    link: [{
-        rel: 'icon',
-        type: 'image/x-icon',
-        href: '/favicon.ico'
+    link: [
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico",
       },
       {
-        href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons',
-        rel: 'stylesheet'
-      }
-    ]
+        href:
+          "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons",
+        rel: "stylesheet",
+      },
+    ],
   },
   /*
    ** Global CSS
    */
-  css: [
-    // {
-    //   src: '~assets/style/app.styl',
-    //   lang: 'styl'
-    // },
-    '~assets/css/vuetify.min.css',
-    '~assets/css/overide.css'
-  ],
+  css: ["@/assets/css/vuetify.min.css"],
   /*
    ** Customize the progress-bar color
    */
   loading: {
-    color: 'white',
-    height: '10px'
+    color: "green",
+    height: "10px",
   },
 
   /*
@@ -53,7 +49,8 @@ module.exports.nuxt = {
    */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    "@nuxtjs/axios",
+    // "@nuxtjs/pwa",
   ],
   /*
    ** Axios module configuration
@@ -67,26 +64,19 @@ module.exports.nuxt = {
    ** Build configuration
    */
   build: {
-    // rules: [
-    //   {
-    //     test: /\.styl$/,
-    //     loader: ['style-loader', 'css-loader', 'stylus-loader']
-    //   }
-    // ],
-
-    extend(config, ctx) {
-
-    }
+    extend(config, ctx) {},
   },
 
-  srcDir: 'client/',
+  srcDir: "client/",
 
-  plugins: [{
-    src: '~plugins/socket.io.js',
-    ssr: false
-  }, {
-    src: '~/plugins/vuetify',
-    ssr: true
-  }],
-
+  plugins: [
+    {
+      src: "~plugins/socket.io.js",
+      ssr: false,
+    },
+    {
+      src: "@/plugins/vuetify",
+      ssr: true,
+    },
+  ],
 };

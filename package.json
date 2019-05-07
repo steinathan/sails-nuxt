@@ -2,7 +2,7 @@
   "name": "sails-nuxt",
   "private": false,
   "version": "1.0.2",
-  "description": "Sailsjs + Nuxt.js + Vuetifyjs project",
+  "description": "Full stack sailsjs project",
   "author": "Navicstein Rotciv <navicsteinrotciv@gmail.com>",
   "keywords": [
     "sails",
@@ -10,9 +10,10 @@
     "vuetifyjs",
     "vuetify",
     "nuxt",
+    "vue",
     "nuxtjs",
-    "fullstack",
-    "ssr"
+    "fullstack sails",
+    "sails ssr"
   ],
   "dependencies": {
     "@nuxtjs/axios": "^5.4.1",
@@ -31,20 +32,11 @@
   "devDependencies": {
     "@sailshq/eslint": "^4.19.3",
     "babel-eslint": "^10.0.1",
-    "css-loader": "^2.1.1",
-    "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jest": "^22.5.1",
-    "eslint-plugin-node": "^9.0.1",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^5.2.2",
-    "sails-hook-watch": "0.3.5"
+    "css-loader": "^2.1.1"
   },
   "scripts": {
     "dev": "sails lift",
-    "build": "cross-env NODE_ENV=production sails run build-nuxt",
+    "build": "cross-env NODE_ENV=development sails run build-nuxt",
     "start": "cross-env NODE_ENV=production sails lift",
     "lint": "eslint . --max-warnings=0 --ext .js,.vue --report-unused-disable-directives && echo '✔  Your .js files look good.'"
   },
